@@ -1,0 +1,37 @@
+{
+  "name": "geo-feature-clustering",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --exec babel-node --presets es2015,stage-2",
+    "build": "babel index.js -o index.es5.js",
+    "serve": "npm run build && node index.es5.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vankop/geo-feature-clustering.git"
+  },
+  "keywords": [
+    "geo",
+    "clusterization"
+  ],
+  "author": "Ivan Kopeykin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vankop/geo-feature-clustering/issues"
+  },
+  "homepage": "https://github.com/vankop/geo-feature-clustering#readme",
+  "dependencies": {
+    "@mapbox/geo-viewport": "^0.2.2",
+    "lodash": "^4.17.10",
+    "supercluster": "^3.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.11.0",
+    "babel-register": "^6.11.6",
+    "nodemon": "^1.10.0"
+  }
+}
